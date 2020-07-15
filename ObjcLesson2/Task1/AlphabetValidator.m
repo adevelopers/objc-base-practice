@@ -3,7 +3,7 @@
 //  ObjcLesson2
 //
 //  Created by Кирилл Худяков on 15.07.2020.
-//  Copyright © 2020 MTS. All rights reserved.
+//  Copyright © 2020 Кирилл Худяков. All rights reserved.
 //
 
 #import "AlphabetValidator.h"

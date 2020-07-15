@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F1343DBA24BEFA9E008F4E69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1343DB924BEFA9E008F4E69 /* main.m */; };
 		F1343DC324BEFE69008F4E69 /* AlphabetValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F1343DC224BEFE69008F4E69 /* AlphabetValidator.m */; };
+		F1343DC724BF3566008F4E69 /* SolutionsFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = F1343DC624BF3566008F4E69 /* SolutionsFacade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		F1343DB924BEFA9E008F4E69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1343DC124BEFE69008F4E69 /* AlphabetValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphabetValidator.h; sourceTree = "<group>"; };
 		F1343DC224BEFE69008F4E69 /* AlphabetValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphabetValidator.m; sourceTree = "<group>"; };
+		F1343DC524BF3566008F4E69 /* SolutionsFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolutionsFacade.h; sourceTree = "<group>"; };
+		F1343DC624BF3566008F4E69 /* SolutionsFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolutionsFacade.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				F1343DB924BEFA9E008F4E69 /* main.m */,
+				F1343DC524BF3566008F4E69 /* SolutionsFacade.h */,
+				F1343DC624BF3566008F4E69 /* SolutionsFacade.m */,
 				F1343DC024BEFE54008F4E69 /* Task1 */,
+				F1343DC424BF3509008F4E69 /* Task2 */,
 			);
 			path = ObjcLesson2;
 			sourceTree = "<group>";
@@ -73,6 +79,13 @@
 				F1343DC224BEFE69008F4E69 /* AlphabetValidator.m */,
 			);
 			path = Task1;
+			sourceTree = "<group>";
+		};
+		F1343DC424BF3509008F4E69 /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Task2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +115,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = MTS;
+				ORGANIZATIONNAME = "Кирилл Худяков";
 				TargetAttributes = {
 					F1343DB524BEFA9E008F4E69 = {
 						CreatedOnToolsVersion = 11.5;
@@ -132,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1343DC724BF3566008F4E69 /* SolutionsFacade.m in Sources */,
 				F1343DBA24BEFA9E008F4E69 /* main.m in Sources */,
 				F1343DC324BEFE69008F4E69 /* AlphabetValidator.m in Sources */,
 			);
