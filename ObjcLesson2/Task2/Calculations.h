@@ -1,5 +1,5 @@
 //
-//  AlphabetValidator.h
+//  Calculations.h
 //  ObjcLesson2
 //
 //  Created by Кирилл Худяков on 15.07.2020.
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AlphabetValidator : NSObject
+@interface Calculations : NSObject
 
-@property (class) NSMutableArray *alphabet;
-
-+(BOOL)isValidLetter:(NSString*)letter;
+-(int)calculate:(NSString *)method and:(int)a and:(int)b;
 
 @end
 

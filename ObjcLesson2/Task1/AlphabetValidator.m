@@ -9,7 +9,7 @@
 #import "AlphabetValidator.h"
 
 @implementation AlphabetValidator
-@dynamic alphabet; // что делает dynamic ?
+@dynamic alphabet; // что делает dynamic !?
 
 + (NSMutableArray *)alphabet {
     NSMutableArray *alphabet = [NSMutableArray new];

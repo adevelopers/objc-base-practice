@@ -12,6 +12,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         [SolutionsFacade executeTask1];
+        [SolutionsFacade executeTask2];
     }
     return 0;
 }

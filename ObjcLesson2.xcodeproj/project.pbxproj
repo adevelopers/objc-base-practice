@@ -10,6 +10,7 @@
 		F1343DBA24BEFA9E008F4E69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1343DB924BEFA9E008F4E69 /* main.m */; };
 		F1343DC324BEFE69008F4E69 /* AlphabetValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F1343DC224BEFE69008F4E69 /* AlphabetValidator.m */; };
 		F1343DC724BF3566008F4E69 /* SolutionsFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = F1343DC624BF3566008F4E69 /* SolutionsFacade.m */; };
+		F1343DCA24BF379E008F4E69 /* Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = F1343DC924BF379E008F4E69 /* Calculations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		F1343DC224BEFE69008F4E69 /* AlphabetValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphabetValidator.m; sourceTree = "<group>"; };
 		F1343DC524BF3566008F4E69 /* SolutionsFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolutionsFacade.h; sourceTree = "<group>"; };
 		F1343DC624BF3566008F4E69 /* SolutionsFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolutionsFacade.m; sourceTree = "<group>"; };
+		F1343DC824BF379E008F4E69 /* Calculations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculations.h; sourceTree = "<group>"; };
+		F1343DC924BF379E008F4E69 /* Calculations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		F1343DC424BF3509008F4E69 /* Task2 */ = {
 			isa = PBXGroup;
 			children = (
+				F1343DC824BF379E008F4E69 /* Calculations.h */,
+				F1343DC924BF379E008F4E69 /* Calculations.m */,
 			);
 			path = Task2;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				F1343DC724BF3566008F4E69 /* SolutionsFacade.m in Sources */,
 				F1343DBA24BEFA9E008F4E69 /* main.m in Sources */,
 				F1343DC324BEFE69008F4E69 /* AlphabetValidator.m in Sources */,
+				F1343DCA24BF379E008F4E69 /* Calculations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
