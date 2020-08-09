@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void)executeTask1;
 +(void)executeTask2;
-+(void)executeTask3;
 
 @end
 
