@@ -11,7 +11,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        [Solutions  executeTask1];
+        [Solutions executeTask1];
+        [Solutions executeTask2];
     }
     return 0;
 }

@@ -10,16 +10,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+enum Sex {
+    female,
+    male
+};
+
+typedef enum Sex Sex;
+
 @interface Student : NSObject
 
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* surName;
 @property (readonly, nonatomic, assign) int age;
 @property (readonly, nonatomic) NSString* fullName;
+@property (readonly, nonatomic, assign) Sex sex;
 
--(instancetype)initWithName:(NSString *)name andSurName:(NSString *)surName andAge:(int)age;
+-(instancetype)initWithName:(NSString *)name andSurName:(NSString *)surName andAge:(int)age withSex:(Sex)sex;
 
-    
+-(void)setAge:(int)age;
 
 @end
 

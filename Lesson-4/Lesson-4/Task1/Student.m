@@ -7,15 +7,17 @@
 //
 
 #import "Student.h"
+#import "Student+Age.h"
 
 @implementation Student
 
--(instancetype)initWithName:(NSString *)name andSurName:(NSString *)surName andAge:(int)age {
+-(instancetype)initWithName:(NSString *)name andSurName:(NSString *)surName andAge:(int)age withSex:(Sex)sex {
     self = [super init];
     if (self) {
         self.name = name;
         self.surName = surName;
         self->_age = age;
+        self->_sex = sex;
     }
     return self;
 }
@@ -25,7 +27,14 @@
 }
 
 -(NSString*)description {
-    return [[NSString alloc] initWithFormat:@"\nСтудент %@ Возраст: %d\n", self.fullName, self.age];
+    [self increseAge];
+    return [[NSString alloc] initWithFormat:@"Студент %@ Возраст: %d\n", self.fullName, self.age];
 }
+
+-(void)setAge:(int)age {
+    self->_age = age;
+}
+
+
 
 @end

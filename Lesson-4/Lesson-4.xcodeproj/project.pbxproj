@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F173875B24E02A5300D51D3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F173875A24E02A5300D51D3F /* main.m */; };
-		F173876424E02A8700D51D3F /* Solutions.m in Sources */ = {isa = PBXBuildFile; fileRef = F173876224E02A8700D51D3F /* Solutions.m */; };
 		F173876724E02AE000D51D3F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F173876624E02AE000D51D3F /* Student.m */; };
 		F173876A24E02C7A00D51D3F /* StudentsList.m in Sources */ = {isa = PBXBuildFile; fileRef = F173876924E02C7A00D51D3F /* StudentsList.m */; };
+		F173876E24E0430800D51D3F /* StudetsService.m in Sources */ = {isa = PBXBuildFile; fileRef = F173876D24E0430800D51D3F /* StudetsService.m */; };
+		F173877124E0440100D51D3F /* Student+Age.m in Sources */ = {isa = PBXBuildFile; fileRef = F173877024E0440100D51D3F /* Student+Age.m */; };
+		F173877424E0505000D51D3F /* Solutions.m in Sources */ = {isa = PBXBuildFile; fileRef = F173877224E0505000D51D3F /* Solutions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +30,16 @@
 /* Begin PBXFileReference section */
 		F173875724E02A5300D51D3F /* Lesson-4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson-4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F173875A24E02A5300D51D3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F173876224E02A8700D51D3F /* Solutions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Solutions.m; path = ../../../Lesson3/Lesson3/Solutions.m; sourceTree = "<group>"; };
-		F173876324E02A8700D51D3F /* Solutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Solutions.h; path = ../../../Lesson3/Lesson3/Solutions.h; sourceTree = "<group>"; };
 		F173876524E02AE000D51D3F /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		F173876624E02AE000D51D3F /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		F173876824E02C7A00D51D3F /* StudentsList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentsList.h; sourceTree = "<group>"; };
 		F173876924E02C7A00D51D3F /* StudentsList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentsList.m; sourceTree = "<group>"; };
+		F173876C24E0430800D51D3F /* StudetsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudetsService.h; sourceTree = "<group>"; };
+		F173876D24E0430800D51D3F /* StudetsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudetsService.m; sourceTree = "<group>"; };
+		F173876F24E0440100D51D3F /* Student+Age.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Age.h"; sourceTree = "<group>"; };
+		F173877024E0440100D51D3F /* Student+Age.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Age.m"; sourceTree = "<group>"; };
+		F173877224E0505000D51D3F /* Solutions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Solutions.m; sourceTree = "<group>"; };
+		F173877324E0505000D51D3F /* Solutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solutions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				F173876124E02A6100D51D3F /* Task1 */,
+				F173876B24E042D200D51D3F /* Task2 */,
 				F173875A24E02A5300D51D3F /* main.m */,
-				F173876324E02A8700D51D3F /* Solutions.h */,
-				F173876224E02A8700D51D3F /* Solutions.m */,
+				F173877324E0505000D51D3F /* Solutions.h */,
+				F173877224E0505000D51D3F /* Solutions.m */,
 			);
 			path = "Lesson-4";
 			sourceTree = "<group>";
@@ -83,6 +90,17 @@
 				F173876924E02C7A00D51D3F /* StudentsList.m */,
 			);
 			path = Task1;
+			sourceTree = "<group>";
+		};
+		F173876B24E042D200D51D3F /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+				F173876C24E0430800D51D3F /* StudetsService.h */,
+				F173876D24E0430800D51D3F /* StudetsService.m */,
+				F173876F24E0440100D51D3F /* Student+Age.h */,
+				F173877024E0440100D51D3F /* Student+Age.m */,
+			);
+			path = Task2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F173876424E02A8700D51D3F /* Solutions.m in Sources */,
+				F173877424E0505000D51D3F /* Solutions.m in Sources */,
 				F173875B24E02A5300D51D3F /* main.m in Sources */,
+				F173877124E0440100D51D3F /* Student+Age.m in Sources */,
+				F173876E24E0430800D51D3F /* StudetsService.m in Sources */,
 				F173876724E02AE000D51D3F /* Student.m in Sources */,
 				F173876A24E02C7A00D51D3F /* StudentsList.m in Sources */,
 			);
