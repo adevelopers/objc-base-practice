@@ -11,31 +11,44 @@
 @implementation ApiService
 
 -(void)getUsersList:(UsersComletionBlock)completion {
-    sleep(1);
-    completion(@[
-        [[User alloc] initWithId:1 and:@"Kirill"],
-        [[User alloc] initWithId:2 and:@"Alexey"],
-        [[User alloc] initWithId:3 and:@"Lina"],
-        [[User alloc] initWithId:4 and:@"Mary"]
-    ]);
+    dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0);
+    
+    dispatch_async(queue, ^{
+        sleep(5);
+        completion(@[
+            [[User alloc] initWithId:1 and:@"Kirill"],
+            [[User alloc] initWithId:2 and:@"Alexey"],
+            [[User alloc] initWithId:3 and:@"Lina"],
+            [[User alloc] initWithId:4 and:@"Mary"]
+        ]);
+    });
     
 }
 
 -(void)getAvailableTicketsCount:(void(^)(int))completion {
-    sleep(5);
-    [self getTicketsList:^(NSArray* tickets){
-        completion((int)tickets.count);
-    }];
+    dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0);
+    
+    dispatch_async(queue, ^{
+        sleep(7);
+        [self getTicketsList:^(NSArray* tickets){
+            completion((int)tickets.count);
+        }];
+    });
+    
 }
 
 
 -(void)getUserSalary:(DoubleCompletionBlock)completion {
+    sleep(3);
     completion((double)arc4random() / 100000 );
 }
 
 -(void)getAccessToken:(StringCompletionBlock)completion {
-    sleep(3);
-    completion([[NSUUID UUID] UUIDString]);
+    dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        sleep(3);
+        completion([[NSUUID UUID] UUIDString]);
+    });
 }
 
 -(void)getUserNameByID:(int)ID  and:(StringCompletionBlock)completion {
