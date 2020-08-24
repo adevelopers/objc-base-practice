@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Bird : NSObject
 
+@property (nonatomic, strong) NSString *kind;
+
 @end
 
 NS_ASSUME_NONNULL_END

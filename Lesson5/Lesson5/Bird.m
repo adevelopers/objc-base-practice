@@ -10,6 +10,23 @@
 
 @implementation Bird
 
+- (instancetype)initWithModel:(NSString *)kind {
+    self = [super init];
+    if (self) {
+        [kind retain];
+        [kind release];
+        _kind = kind;
+        NSLog(@"Bird kind - %@", kind);
+    }
+    return self;
+}
+
+- (void)dealloc {
+    NSLog(@"Dealloc Enging - %@", _kind);
+    [_kind release];
+    [super dealloc];
+}
+
 
 
 @end
