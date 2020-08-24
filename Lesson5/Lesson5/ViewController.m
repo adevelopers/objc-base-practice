@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -16,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Bird* swift = [[Bird alloc] init];
+    Bird* mockingjay = [[Bird alloc] init];
+    
+    
     
     
     
