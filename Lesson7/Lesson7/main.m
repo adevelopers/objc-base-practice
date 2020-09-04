@@ -58,6 +58,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        // Task 1
         Student* student = [Student new];
         student.name = @"Kirill";
         student.surname = @"K";
@@ -77,6 +78,23 @@ int main(int argc, const char * argv[]) {
         } else {
             printf("student is nil\n");
         }
+        
+        
+        // Task 2
+        
+        
+        // Попытка использовать обработку ошибок чтобы можно было на разных уровнях накаплиывать ошибки,
+        // при передачи их от одного архитектурного слоя к другому
+        NSError* nestedError = [[NSError alloc] initWithDomain:@"Student" code:201 userInfo:@{@"text": @"Ошибка например из сетевого слоя"}];
+        NSError* error = [[NSError alloc] initWithDomain:@"Student" code:302 userInfo:@{@"text": @"Текст ошибки для UI слоя", NSUnderlyingErrorKey: nestedError}];
+        
+        
+        NSLog(@"❌ %@", ((NSError*)error.userInfo[NSUnderlyingErrorKey]).userInfo[@"text"]);
+        NSLog(@"❌ %@", error.userInfo[@"text"]);
+        
+        
+        
+        
         
     }
     return 0;
